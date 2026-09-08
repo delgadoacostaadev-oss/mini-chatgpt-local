@@ -52,6 +52,16 @@ Instala todas las librerías necesarias:
 pip install -r requirements.txt
 ```
 
+**¡Importante! (Configuración de Base de Datos):**
+Como los archivos `.env` (donde están tus contraseñas) no se suben a GitHub por seguridad, debes crear uno nuevo. En la carpeta `backend`, crea un archivo llamado `.env` y ponle tus credenciales de PostgreSQL. Por ejemplo:
+```env
+DB_USERNAME=postgres
+DB_PASSWORD=tu_contraseña_aqui
+DB_HOST=localhost
+DB_PORT=5432
+DB_DATABASE=db_minichatgpt
+```
+
 ### 4. Configurar el Frontend (React / Next.js)
 Abre OTRA terminal nueva, ve a la carpeta de tu proyecto y entra a `frontend`:
 ```bash
